@@ -41,8 +41,8 @@ const {
 
 // Apply the middleware to protect these routes
 router.get('/userprompts', getUserPrompts);
-router.get('/prompts/:id', ensureAuthenticated, getPromptById);
-router.post('/prompts/:id/execute', ensureAuthenticated, executePrompt);
+router.get('/prompts/:id', getPromptById);
+router.post('/prompts/:id/execute',executePrompt);
 
 
 module.exports = router;
