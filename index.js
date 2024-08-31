@@ -431,7 +431,7 @@ const app = express();
 
 // CORS setup with credentials
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://happy-f-lime.vercel.app',
   credentials: true,
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   allowedHeaders: 'Content-Type, Authorization'
